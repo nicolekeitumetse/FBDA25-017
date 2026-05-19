@@ -1,0 +1,57 @@
+/* style.css - Amber & Oak Coffee Shop */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background-attachment: fixed;
+}
+
+.btn-warning {
+    background-color: #d97706;
+    border-color: #d97706;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #b45309;
+    border-color: #b45309;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+footer {
+    background-color: #1f2937;
+    color: #ddd;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #d97706;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
