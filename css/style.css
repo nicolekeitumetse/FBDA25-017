@@ -2,20 +2,22 @@ body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     color: #3f2a1e;
     background-color: #f8f1e9;
+    line-height: 1.7;
 }
 
 .navbar {
     background-color: #3f2a1e !important;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
 .navbar-brand {
     color: #d4b89e !important;
+    font-size: 1.85rem;
 }
 
 .hero {
-    background: linear-gradient(rgba(63,42,30,0.75), rgba(63,42,30,0.75)), 
-                url('https://source.unsplash.com/random/1600x900/?wood,cafe') center/cover no-repeat;
+    background: linear-gradient(rgba(63,42,30,0.78), rgba(63,42,30,0.78)), 
+                url('https://source.unsplash.com/random/1600x1000/?wood,coffee,interior') center/cover no-repeat;
     height: 100vh;
     color: white;
     display: flex;
@@ -27,42 +29,55 @@ body {
     background-color: #1a3c2e;
     color: white;
     border: none;
+    padding: 12px 40px;
     font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s;
 }
 
 .menu-btn:hover {
     background-color: #234d3b;
-    transform: scale(1.05);
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(26, 60, 46, 0.3);
 }
 
 .card {
     border: none;
-    border-radius: 15px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
     transition: all 0.4s ease;
 }
 
 .card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    transform: translateY(-15px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.18);
 }
 
 .section-title {
     color: #3f2a1e;
     position: relative;
     display: inline-block;
+    margin-bottom: 2.5rem;
 }
 
 .section-title:after {
     content: '';
     position: absolute;
-    width: 70px;
+    width: 80px;
     height: 3px;
     background-color: #1a3c2e;
-    bottom: -10px;
+    bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+img {
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
 }
 
 footer {
