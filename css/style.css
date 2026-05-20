@@ -84,3 +84,12 @@ footer {
     background-color: #3f2a1e;
     color: #d4b89e;
 }
+
+footer a {
+    color: #d4b89e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f5e8c7;
+}
